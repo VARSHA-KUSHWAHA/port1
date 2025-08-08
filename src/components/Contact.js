@@ -40,11 +40,7 @@ const Contact = () => {
           gap: 40px;
         }
 
-        .contact-info {
-          flex: 1;
-          min-width: 300px;
-        }
-
+        .contact-info,
         .contact-form {
           flex: 1;
           min-width: 300px;
@@ -58,7 +54,7 @@ const Contact = () => {
 
         .contact-icon {
           font-size: 20px;
-          color: #007BFF; /* Change this to your primary color */
+          color: #007BFF;
           margin-right: 10px;
         }
 
@@ -112,10 +108,32 @@ const Contact = () => {
           font-weight: bold;
           border-radius: 4px;
           cursor: pointer;
+          width: auto;
         }
 
         .btn:hover {
           background-color: #333;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+          .contact-content {
+            flex-direction: column;
+            gap: 20px;
+          }
+
+          .contact-info,
+          .contact-form {
+            min-width: 100%;
+          }
+
+          .btn {
+            width: 100%;
+          }
+
+          .contact-item {
+            align-items: flex-start;
+          }
         }
       `}</style>
 

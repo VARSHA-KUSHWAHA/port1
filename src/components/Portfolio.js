@@ -23,12 +23,21 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      category: 'react',
+      category: 'javascript',
       image: '/images/imge3.png',
       title: 'LMS Learning',
       description: 'A learning management system frontend built with React.js.',
       liveLink: 'https://lms-learing.vercel.app/'
-    }
+    },
+    {
+  id: 4,
+  category: 'react',
+  image: '/images/imge1.png', // Project ka relevant, high-quality screenshot
+  title: 'Plant E-Commerce Platform',
+  description: 'A visually appealing, mobile-friendly plant shopping platform built with React.js and Next.js — featuring smooth navigation, responsive design, and fast Vercel deployment.',
+  liveLink: 'https://plant-projects.vercel.app/'
+ }
+
   ];
 
   const filteredItems = filter === 'all' 
@@ -39,7 +48,7 @@ const Portfolio = () => {
     <section className="section" id="portfolio">
       <div className="container">
         <div className="section-title">
-          <h2>My Project</h2>
+          <h2>My Projects</h2>
         </div>
         <div className="portfolio-filter">
           <button className={`filter-btn ${filter === 'all' ? 'active' : ''}`} onClick={() => setFilter('all')}>All</button>
